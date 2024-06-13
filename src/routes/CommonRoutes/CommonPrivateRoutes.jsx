@@ -1,5 +1,8 @@
 import { Route, Routes } from "react-router-dom"
 import TelaInicial from "../../pages/TelaInicial"
+import TelaBiblioteca from "../../pages/TelaBiblioteca"
+
+
 
 export const CommonPrivateRoutes = ({
     HandledarkMode,
@@ -22,6 +25,19 @@ export const CommonPrivateRoutes = ({
                 />
               }
             />
+            <Route
+            path="/biblioteca"
+            element={
+            <TelaBiblioteca
+              increaseFontSize={increaseFontSize}
+              decreaseFontSize={decreaseFontSize}
+              HandledarkMode={HandledarkMode}
+              isDarkMode={isDarkMode}
+              logOut={handleOpenModal}
+              />
+            }
+              />
+
         </Routes>
     )
 }

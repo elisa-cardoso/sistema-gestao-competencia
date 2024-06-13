@@ -47,7 +47,7 @@ function TelaInicial({
               photo={LibrarySVG}
               title={"SB"}
               subtitle={"Sistema de Biblioteca"}
-              routeTo={"/"}
+              routeTo={"/biblioteca"}
             />
           </Col>
           <Col sm={3} md={4} lg={3} title={"Sistema Caixa de Ferramentas"}>

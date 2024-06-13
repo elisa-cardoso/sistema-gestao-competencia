@@ -131,7 +131,7 @@ function Root({
 
   return (
     <BrowserRouter>
-      {auth ? (
+      {true ? (
         <>
           <RenderLogOutModal />
           <CommonPrivateRoutes
